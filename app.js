@@ -9,7 +9,6 @@ function setIndicatorPosition() {
     const index = Array.from(listItems).indexOf(activeItem);
     const widthValue = activeItem.offsetWidth;
     const position = index * widthValue;
-    console.log(position);
     indicator.style.transform = `translateX(${position}px)`;
   }
 }
@@ -21,7 +20,6 @@ function setIndicatorPosition2() {
       const index = Array.from(listItems).indexOf(activeItem);
       const heightValue = activeItem.offsetHeight;
       const position = index * heightValue;
-      console.log(position);
       indicator.style.transform = `translatey(${position}px)`;
     }
   }
