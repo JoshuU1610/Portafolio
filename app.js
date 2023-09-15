@@ -1,6 +1,20 @@
 const list = document.querySelectorAll('.list-item');
 const listItems = document.querySelectorAll('.list-item');
 let indicator = document.querySelector('.indicator');
+const secciones = document.querySelectorAll('.seccion');
+const observer = new IntersectionObserver((entradas, observer) => {
+  entradas.forEach(entrada => {
+    if (entrada.isIntersecting) {
+      console.log(entrada.target);
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+secciones.forEach(seccion => {
+  observer.observe(seccion);
+});
 
 function setIndicatorPosition() {
   const activeItem = document.querySelector('.list-item.active');
