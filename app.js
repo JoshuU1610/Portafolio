@@ -23,21 +23,23 @@ const observer = new IntersectionObserver((entradas, observer) => {
       const activeItem = document.querySelector('.list-item.active');
       const widthValue = activeItem.offsetWidth;
       const heightValue = activeItem.offsetHeight;
+      console.log(heightValue);
       const lenght = Number(position.index);
       const a = lenght * widthValue;
-      const b = lenght * heightValue;
-
-      if (window.innerWidth < 1024){
+      const b = (lenght * heightValue);
+      console.log(a)
+      console.log(b);;
+      if (window.innerWidth < 1024) {
         indicator.style.transform = `translateX(${a}px)`;
-      }else{
+      } else {
         indicator.style.transform = `translateY(${b}px)`;
       }
-      
+
       listItems.forEach(item => {
         item.classList.remove('active');
-        
+
         listItems[lenght].classList.add('active');
-    });
+      });
     }
   });
 }, {
