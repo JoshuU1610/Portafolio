@@ -229,10 +229,11 @@ body{
 }
 
 .cuadro{
-	width: 10.5rem;
-	height: 10.5rem;
+	width: 10rem;
+	height: 10rem;
+	margin: -2rem 0rem 0rem -2rem;
 	position: absolute;
-	background-color: #85f27e;
+	border: solid #85f27e 0.5rem;
 	border-radius: 0.5rem;
 }
 
