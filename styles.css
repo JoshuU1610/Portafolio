@@ -196,6 +196,28 @@ body{
 	color: white;
 }
 
+#sec1 p{
+	font-size: 2rem;
+	text-align: center;
+	margin: 0;
+}
+
+#sec1 p span{
+	color: #85f27e;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.line{
+	display: flex;
+	width: 60%;
+	height: 0.5rem;
+	background: #85f27e;
+	transition: 500ms;
+	text-transform: none;
+	font-family: 'Roboto Mono', monospace;
+}
+
 @media(min-width: 1024px){
 	#nav-bar{
 		background-color: #004443;
@@ -250,5 +272,20 @@ body{
 		margin-top: 5rem;
 		gap: 1rem;
 		transition: 500ms;
+	}
+
+	#sec1 p{
+		font-size: 6rem;
+		color: white;
+		text-align: center;
+		text-transform: none;
+		font-family: 'Roboto Mono', monospace;
+		margin: 0;
+	}
+
+	#sec1 p span{
+		color: #85f27e;
+		font-weight: bold;
+		text-transform: uppercase;
 	}
 }
