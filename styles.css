@@ -56,7 +56,7 @@ body{
 
 .list-item{
 	position: relative;
-	width: 25%;
+	width: 34%;
 	z-index: 2;
 }
 
@@ -112,7 +112,7 @@ body{
 .indicator{
 	position: absolute;
 	top: -2.3rem;
-	margin: 0.67rem 0rem;
+	margin: 0.67rem 0.7rem;
 	width: 4rem;
 	height:4rem;
 	background: #004443;
@@ -449,7 +449,7 @@ body{
 
 	.indicator{
 		background: rgb(133, 132, 132);
-		top: 13%;
+		top: 20%;
 		margin: 0.67rem 0rem;
 		width: 80%;
 		height: 12%;
