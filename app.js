@@ -51,9 +51,8 @@ secciones.forEach(seccion => {
 document.getElementById('next').onclick = function(){
   let lists = document.querySelectorAll('.item');
   document.getElementById('slide').children[0].appendChild(lists[0]);
-  console.log(document.getElementById('slide'));
 }
 document.getElementById('prev').onclick = function(){
   let lists = document.querySelectorAll('.item');
-  document.getElementById('slide').prepend(lists[lists.length - 1]);
+  document.getElementById('slide').children[0].prepend(lists[lists.length - 1]);
 }

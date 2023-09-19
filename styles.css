@@ -302,10 +302,13 @@ body{
 }
 
 #sec3 .item .content{
+	background-color: #555555a7;
+	border-radius: 1rem;
     position: absolute;
-	padding: 1rem;
     top:40%;
-    width:100%;
+	left: 5%;
+    width: 90%;
+	height: 40%;
     text-align: left;
     padding:0;
     color:#eee;
@@ -330,7 +333,7 @@ body{
 #sec3 .item .des{
 	width: 100%;
 	padding: 1rem;
-	font-size: 0.7rem;
+	font-size: 1rem;
     opacity: 0;
 	text-align: center;
     animation:showcontent 1s ease-in-out 0.3s 1 forwards
@@ -340,19 +343,21 @@ body{
 	position: absolute;
 	top: 70%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	gap: 0.5rem;
     justify-content: center;
 	align-items: center;
 	width: 100%;
 }
 
-#sec3 .item .buttons-2 button{
+#sec3 .item .buttons-2 a{
 	padding: 1rem;
 	border: none;
 	background-color: aliceblue;
 	border-radius: 4rem;
 	font-size: 0.7rem;
+	text-decoration: none;
+	color: #000;
 }
 
 @keyframes showcontent{
@@ -372,7 +377,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    bottom:8rem;
+    bottom: 12%;
     z-index: 222222;
     width:100%;
 }
@@ -467,8 +472,8 @@ body{
 	
 	.container{
 		transform: translate(0,0);
-		width:1000px;
-		height:600px;
+		width: 90%;
+		height: 80%;
 		padding:50px;
 	}
 	
@@ -511,19 +516,19 @@ body{
 		width: 90%;
 		left: 0.5rem;
 		top: 70%;
+		display: none;
 	}
 	
 	#sec3 .item .content{
 		position: absolute;
 		top: 42%;
-		left:100px;
-		width:300px;
+		left: 10%;
+		width: 40%;
 		text-align: left;
 		padding:0;
 		color:#eee;
 		transform: translate(0,-50%);
 		display: none;
-		font-family: system-ui;
 	}
 	
 	#sec3 .item:nth-child(2) .content{
@@ -532,14 +537,16 @@ body{
 	}
 	
 	#sec3 .item .name{
-		font-size: 40px;
+		font-size: 2rem;
+		margin: 1rem;
 		font-weight: bold;
 		opacity: 0;
 		animation:showcontent 1s ease-in-out 1 forwards
 	}
 	
 	#sec3 .item .des{
-		margin:20px 0;
+		font-size: 1.2rem;
+		margin-top: 1.7rem;
 		opacity: 0;
 		animation:showcontent 1s ease-in-out 0.3s 1 forwards
 	}
@@ -588,14 +595,16 @@ body{
 		gap: 0.5rem;
 		justify-content: center;
 		align-items: center;
-		width: 50%;
+		width: 58%;
 	}
 	
-	#sec3 .item .buttons-2 button{
+	#sec3 .item .buttons-2 a{
 		padding: 1rem;
 		border: none;
 		background-color: aliceblue;
 		border-radius: 4rem;
 		font-size: 0.7rem;
+		text-decoration: none;
+		color: #000;
 	}
 }
