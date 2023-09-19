@@ -23,12 +23,9 @@ const observer = new IntersectionObserver((entradas, observer) => {
       const activeItem = document.querySelector('.list-item.active');
       const widthValue = activeItem.offsetWidth;
       const heightValue = activeItem.offsetHeight;
-      console.log(heightValue);
       const lenght = Number(position.index);
       const a = lenght * widthValue;
       const b = (lenght * heightValue);
-      console.log(a)
-      console.log(b);;
       if (window.innerWidth < 1024) {
         indicator.style.transform = `translateX(${a}px)`;
       } else {
@@ -49,3 +46,14 @@ const observer = new IntersectionObserver((entradas, observer) => {
 secciones.forEach(seccion => {
   observer.observe(seccion);
 });
+
+
+document.getElementById('next').onclick = function(){
+  let lists = document.querySelectorAll('.item');
+  document.getElementById('slide').children[0].appendChild(lists[0]);
+  console.log(document.getElementById('slide'));
+}
+document.getElementById('prev').onclick = function(){
+  let lists = document.querySelectorAll('.item');
+  document.getElementById('slide').prepend(lists[lists.length - 1]);
+}
